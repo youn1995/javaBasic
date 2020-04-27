@@ -34,9 +34,8 @@ public class SingleOperatorExample {
 			System.out.println("False");
 		}
 		
-		int bit1 = -10;
-		int bit2 = ~bit1 + 1;
-		
+		int bit1 = 10;
+		int bit2 = ~bit1 + 1; //
 		System.out.println(bit2);
 		
 		
