@@ -4,6 +4,7 @@ public class ArithmeticOperatorExample {
 	int result = num1 / num2; //2
 	System.out.println("result: " + result);
 	
+	//git test
 	result = num1 % num2;
 	System.out.println("result: " + result);
 	
