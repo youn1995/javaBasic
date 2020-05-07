@@ -1,12 +1,25 @@
 import java.util.*;
 
 public class FindNumberComThink {
-
+    
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in); // 범위 정하기
         System.out.println("ENTER RANGE YOU WANT TO PLAY");
         System.out.print("INSERT (BETWEEN 1 AND 2,147,483,647) : ");
-        int userSelRange = scn.nextInt();
+        
+        int userSelRange = 0;
+        while(true)
+        {
+            try {
+                userSelRange = scn.nextInt();
+                break;
+            } catch (Exception e) {
+                System.out.println("오류발생");
+                scn = new Scanner(System.in);
+            }
+            
+        }
+        
         System.out.println();
 
         int comThinkNum = (int) (Math.random() * userSelRange) + 1; // 유저가 정한 범위안에서 컴퓨터 수 정하기

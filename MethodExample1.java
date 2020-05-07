@@ -13,9 +13,23 @@ public class MethodExample1 {
         //System.out.print("몇단?");
         //int inputValue = scn.nextInt();
         //printGugudan(inputValue);
-        printTriangle(5, "&");
+        //printTriangle(5, "&");
+        example03();
+        
 
     }
+    public static void example03() {
+        int sum = 0;
+        for(int i =1; i<=100; i++) {
+            if(i % 3==0) {
+                sum += i;
+            }
+        }
+        System.out.println("1~100 3의 배수 합: "+sum);
+    }
+
+
+
     public static void printTriangle(int num1, String str) {
         for (int i = 1; i <= num1; i++){
             for (int j = 1; j <= i; j++) {
